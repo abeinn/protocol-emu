@@ -1,7 +1,6 @@
 #! /bin/sh
 
-set -eu
-
-if [ ! -e tt ]; then
+if [ ! -L tt ]; then
     cp -R /ttsetup/tt-support-tools tt
+    cd tt && git pull && cd ..
 fi
