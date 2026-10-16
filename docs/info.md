@@ -61,6 +61,12 @@ requests while busy, held requests, enable gating, and reset during transmission
 The waveform is written to `test/tb.fst` (relative to the repository root).
 On Windows, run these commands in Ubuntu under WSL2.
 
+Gate-level simulation requires Icarus Verilog 13 or newer for the PDK's delayed
+input models (RTL simulation works with version 12). Copy the generated netlist
+to `test/gate_level_netlist.v`, set `PDK_ROOT` to the matching PDK installation,
+and run `make -B GATES=yes` in `test/`. The gate-level build includes both the
+standard-cell models and their UDP primitives.
+
 ## External hardware
 
 Simulation requires no external hardware. For a hardware test, use a 50 MHz clock
