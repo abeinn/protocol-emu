@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The current starter adds the two 8-bit input buses and outputs their sum modulo 256. The bidirectional pins are inputs.
 
 ## How to test
 
-Explain how to use your project
+Run `make` in `test/`. The test applies inputs 20 and 30 and checks that the output is 50.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None required for simulation.
