@@ -1,8 +1,13 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
-# Tiny Tapeout Verilog Project Template
+# Protocol Emulator — UART milestone
 
 - [Read the documentation for project](docs/info.md)
+
+The active design is an 8N1 UART transmitter with a byte input, send request, TX,
+and busy output. At 50 MHz it defaults to approximately 115,200 baud.
+See the project documentation for the pinout, request timing, and simulation steps.
+The programmable protocol engine is future work.
 
 ## What is Tiny Tapeout?
 
